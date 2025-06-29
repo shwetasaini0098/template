@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+<<<<<<< HEAD
 import Header from "./components/Header";
 import Home from "./components/Home";
 import HomeDetails from "./components/HomeDetails";
@@ -39,6 +40,28 @@ function App() {
         {/*<Route path="/family" element={<Family />} />
         <Route path="/contact" element={<Contact />} />*/}
       </Routes>
+=======
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Templates from "./pages/Templates";
+import About from "./pages/About";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div
+        style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      >
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/templates" element={<Templates />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </div>
+>>>>>>> 624e8ae806de7c78277fc812df51cea5ef40fa68
     </BrowserRouter>
   );
 }
