@@ -1,0 +1,1 @@
+<script type="module" src="/template/assets/index-xxxxx.js"></script>

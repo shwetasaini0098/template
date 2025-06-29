@@ -1,0 +1,40 @@
+.mehndi-container {
+  padding: 40px 20px;
+  background-color: #fff8f2;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.mehndi-heading {
+  font-size: 26px;
+  color: #4b2e2e;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.mehndi-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.mehndi-img-wrapper {
+  width: 350px;   /* pehle 250px tha, ab 350px */
+  height: 500px;  /* pehle 350px tha, ab 500px */
+  border-radius: 175px; /* height/2 ya width/2, agar oval chahiye */
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.mehndi-img-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.mehndi-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

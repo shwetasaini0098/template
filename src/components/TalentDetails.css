@@ -1,0 +1,64 @@
+.talent-details {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.talent-details h1 {
+  font-size: 36px;
+  color: #ff4e9b;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ff4e9b;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.talent-details p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.talent-details ul {
+  margin-left: 20px;
+  font-size: 17px;
+  color: #444;
+}
+
+.talent-details ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .talent-details {
+    padding: 20px;
+  }
+
+  .talent-details h1 {
+    font-size: 28px;
+  }
+
+  .talent-details p,
+  .talent-details ul {
+    font-size: 16px;
+  }
+}
