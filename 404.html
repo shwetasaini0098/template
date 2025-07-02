@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=/template/" />
+    <script>
+      // For client-side routing fallback
+      var l = window.location;
+      var path = l.pathname.replace(/^\/template/, "");
+      window.location.replace("/template/?" + path + l.search + l.hash);
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>
